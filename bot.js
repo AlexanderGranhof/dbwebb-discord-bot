@@ -3,8 +3,6 @@ const auth = require("./auth.json");
 const calendar = require("./calendar.js");
 const client = new Client();
 
-//
-
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
