@@ -4,10 +4,18 @@ const calendar = require("./calendar.js");
 const channels = require("./channels.json");
 let kmom = filterKmom(require("./data/kmom.json"));
 
+const avaliableCommands = {
+    "!fbhelp": "Skriver ut detta.",
+    "!cal": "Skickar en bild på dbwebb kalendern.",
+    "!kmom": "Skriver ut nästa kmom i python och php.",
+    "!kmom htmlphp": "Skriver ut nästa kmom.",
+    "!kmom python": "Skriver ut nästa kmom."
+};
+
 const client = new Client();
 
 client.on("ready", () => {
-    log(`Logged in as ${client.user.tag} at ${new Date().toLocaleString()}`);
+    //log(`Logged in as ${client.user.tag} at ${new Date().toLocaleString()}`);
 });
 
 client.on("message", async message => {
@@ -53,6 +61,16 @@ client.on("message", async message => {
                 let htmlphp = `Htmlphp - ${course.name} - ${course.date}\r` + `${course.url}\r`;
 
                 var msg = `Nästa kmoms:\r` + python + htmlphp;
+
+                message.channel.send(msg);
+                logCommand(message);
+                break;
+            case "fbhelp":
+                var msg = `Du kan använda dessa kommandon:\r`;
+
+                for (cmd in avaliableCommands) {
+                    msg += `\`${cmd}\`: ${avaliableCommands[cmd]}\r`;
+                }
 
                 message.channel.send(msg);
                 logCommand(message);
