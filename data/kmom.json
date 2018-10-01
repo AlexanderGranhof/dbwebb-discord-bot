@@ -1,0 +1,47 @@
+{
+    "python": [
+        {
+            "name": "Kmom01",
+            "date": "09/07/18 23:59:59",
+            "url": "https://dbwebb.se/kurser/python-v2/kmom05"
+        },
+        {
+            "name": "Kmom05",
+            "date": "10/07/18 23:59:59",
+            "url": "https://dbwebb.se/kurser/python-v2/kmom05"
+        },
+        {
+            "name": "Kmom06",
+            "date": "10/14/18 23:59:59",
+            "url": "https://dbwebb.se/kurser/python-v2/kmom06"
+        },
+        {
+            "name": "Individuell examination",
+            "date": "10/30/18 23:59:59",
+            "url": "https://bth.instructure.com/courses/961/assignments/1419"
+        }
+    ],
+
+    "htmlphp": [
+        {
+            "name": "Kmom04",
+            "date": "10/04/18 23:59:59",
+            "url": "https://dbwebb.se/kurser/htmlphp-v3/kmom04"
+        },
+        {
+            "name": "Kmom05",
+            "date": "10/11/18 23:59:59",
+            "url": "https://dbwebb.se/kurser/htmlphp-v3/kmom05"
+        },
+        {
+            "name": "Kmom06",
+            "date": "10/18/18 23:59:59",
+            "url": "https://dbwebb.se/kurser/htmlphp-v3/kmom06"
+        },
+        {
+            "name": "Kmom10 Projekt och examination",
+            "date": "10/31/18 23:59:59",
+            "url": "https://dbwebb.se/kurser/htmlphp-v3/kmom10"
+        }
+    ]
+}
