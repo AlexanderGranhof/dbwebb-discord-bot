@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 
 module.exports.generateImage = async function() {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ args: ["--no-sandbox"] });
     const page = await browser.newPage();
     await page.goto("https://dbwebb.se/cal");
     await page.tap("iframe:nth-of-type(2)");
