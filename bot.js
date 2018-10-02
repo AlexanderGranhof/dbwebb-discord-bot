@@ -15,7 +15,7 @@ const avaliableCommands = {
 const client = new Client();
 
 client.on("ready", () => {
-    //log(`Logged in as ${client.user.tag} at ${new Date().toLocaleString()}`);
+    log(`\`Logged in as ${client.user.tag} at ${new Date().toLocaleString()}\``);
 });
 
 client.on("message", async message => {
